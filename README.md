@@ -45,10 +45,12 @@ uv pip install fastapi uvicorn motor pymongo python-dotenv requests crewai crewa
 cp .env.example .env
 ```
 
-Edit `.env` file with your MongoDB credentials:
+Edit `.env` file with your MongoDB and OPENAI_API_KEY credentials:
 ```env
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/
 MONGO_DB_NAME=your_database_name
+
+OPENAI_API_KEY=your_openai_api_key
 ```
 
 #### Database Setup
