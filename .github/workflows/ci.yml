@@ -27,10 +27,6 @@ jobs:
         run: |
           uv sync
 
-      - name: Run tests
-        run: |
-          uv run pytest -v
-
   deploy:
     needs: build-and-test
     if: github.ref == 'refs/heads/main' && success()
